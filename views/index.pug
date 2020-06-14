@@ -1,0 +1,61 @@
+//- index.pug
+doctype html
+html
+  head
+    title Paliwal Dance Academy
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+        ul
+            div#logo
+                img(src="/static/img/logo.png")
+                | PDA
+            li #[a(href="/") Home]
+            li #[a(href="/") About]
+            li #[a(href="/") Services]
+            li #[a(href="/") Class Info]
+            li #[a(href="/") Contact Us]
+    
+    section#introSection
+        div Welcome to Paliwal's Dance Academy
+        div.small Eat Sleep Dance Repeat
+
+    section#missionSection
+        h2 Our Mission
+        div.card
+            h3 Dance Perfection
+            div.card-box
+                div.card-img
+                    img(src="/static/img/1.png")
+                div.card-content
+                    p Show your passion with perfection.
+        div.card
+            h3 Dance the way you like
+            div.card-box
+                div.card-img
+                    img(src="/static/img/2.png")
+                div.card-content
+                    p No one is here to judge your dance.
+        div.card
+            h3 Expert Teaching
+            div.card-box
+                div.card-img
+                    img(src="/static/img/3.png")
+                div.card-content
+                    p Build and enhance your skills with experts.
+
+    section#sponsorsSection
+        h2 Our Sponsors
+        div#sponsors
+            img(src="/static/img/logo1.png", alt="Sponsor Image", class= "sponImg")
+            img(src="/static/img/logo2.png", alt="Sponsor Image", class= "sponImg")
+            img(src="/static/img/logo3.png", alt="Sponsor Image", class= "sponImg")
+            img(src="/static/img/logo4.png", alt="Sponsor Image", class= "sponImg")
+
+
+    
+    footer#footer
+        | Copyright 2020 PDA.com  | All rights reserved
+    script
+      include ../static/index.js
